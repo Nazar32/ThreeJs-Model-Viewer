@@ -1,0 +1,36 @@
+﻿<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Three JS App</title>         
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body style="background: #fff">
+    <div class="dropdown">
+        <button onclick="dropDown()" class="dropbtn">Select model to display</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#" onclick="showModel('1');">Model 1</a>
+            <a href="#" onclick="showModel('2');">Model 2</a>
+            <a href="#" onclick="showModel('3');">Model 3</a>
+            <a href="#" onclick="showModel('4');">Model 4</a>
+            <a href="#" onclick="showModel('5');">Model 5</a>
+        </div>
+    </div>
+    <div id="enable-wireframe">
+        <button id="enable-wireframe-btn" onclick="enableWireframe()" class="dropbtn">Display wireframe</button>
+    </div>
+
+    
+    <div id="container"  style="min-width: 1024px;border:5px solid red;   max-height: 768px; width: 100%; height: 768px">
+    
+    </div>
+    <script src="scripts/three.min.js"></script>
+    <script src="scripts/JS/Controls/OrbitControls.js"></script>
+    <script src="scripts/JS/Controls/TrackBallControl.js"></script>
+    <script src="scripts/JS/loaders/STLLoader.js"></script>
+    <script src="scripts/JS/sceneBuilder.js"></script>
+    <script src="scripts/JS/navigationHelper.js"></script>
+
+
+</body>
+
+</html>
